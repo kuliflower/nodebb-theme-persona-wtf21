@@ -31,7 +31,7 @@
 
 	<main id="panel" class="slideout-panel">
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
-			<div class="container">
+			<div class="container" style="padding-bottom: 10px;">
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>

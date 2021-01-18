@@ -42,6 +42,9 @@
 
 				<!-- IMPORT partials/post_bar.tpl -->
 			</div>
+			<!-- IF config.usePagination -->
+			<!-- IMPORT partials/paginator.tpl -->
+			<!-- ENDIF config.usePagination -->
 		</div>
 		<!-- IF merger -->
 		<div component="topic/merged/message" class="alert alert-warning clearfix">

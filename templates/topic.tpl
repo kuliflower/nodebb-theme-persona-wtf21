@@ -59,8 +59,8 @@
 		<!-- IMPORT partials/topic/deleted-message.tpl -->
 		
 		<!-- IF config.usePagination -->
-			<!-- IMPORT partials/paginator.tpl -->
-			<!-- ENDIF config.usePagination -->
+		<!-- IMPORT partials/paginator.tpl -->
+		<!-- ENDIF config.usePagination -->
 
 		<ul component="topic" class="posts" data-tid="{tid}" data-cid="{cid}">
 			

@@ -42,9 +42,7 @@
 
 				<!-- IMPORT partials/post_bar.tpl -->
 			</div>
-			<!-- IF config.usePagination -->
-			<!-- IMPORT partials/paginator.tpl -->
-			<!-- ENDIF config.usePagination -->
+			
 		</div>
 		<!-- IF merger -->
 		<div component="topic/merged/message" class="alert alert-warning clearfix">
@@ -59,8 +57,15 @@
 		<!-- ENDIF merger -->
 
 		<!-- IMPORT partials/topic/deleted-message.tpl -->
+		
+		<!-- IF config.usePagination -->
+			<!-- IMPORT partials/paginator.tpl -->
+			<!-- ENDIF config.usePagination -->
 
 		<ul component="topic" class="posts" data-tid="{tid}" data-cid="{cid}">
+			
+			
+			
 			{{{each posts}}}
 				<li component="post" class="{{{ if posts.deleted }}}deleted{{{ end }}} {{{ if posts.selfPost }}}self-post{{{ end }}} {{{ if posts.topicOwnerPost }}}topic-owner-post{{{ end }}}" <!-- IMPORT partials/data/topic.tpl -->>
 					<a component="post/anchor" data-index="{posts.index}" id="{posts.index}"></a>

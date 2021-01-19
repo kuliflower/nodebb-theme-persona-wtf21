@@ -6,17 +6,19 @@
 <div class="row">
 	<div class="topic <!-- IF widgets.sidebar.length -->col-lg-8 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
 		<div class="topic-header">
-			<h1 component="post/header" class="" itemprop="name">
-				<span class="topic-title" component="topic/title">
-					<span component="topic/labels">
-						<i component="topic/pinned" class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->" title="{{{ if !pinExpiry }}}[[topic:pinned]]{{{ else }}}[[topic:pinned-with-expiry, {pinExpiryISO}]]{{{ end }}}"></i>
-						<i component="topic/locked" class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->" title="[[topic:locked]]"></i>
-						<i class="fa fa-arrow-circle-right <!-- IF !oldCid -->hidden<!-- ENDIF !oldCid -->" title="{{{ if privileges.isAdminOrMod }}}[[topic:moved-from, {oldCategory.name}]]{{{ else }}}[[topic:moved]]{{{ end }}}"></i>
-						{{{each icons}}}{@value}{{{end}}}
-					</span>
-					{title}
-				</span>
-			</h1>
+		
+					<h1 component="post/header" class="" itemprop="name">
+						<span class="topic-title" component="topic/title">
+							<span component="topic/labels">
+								<i component="topic/pinned" class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->" title="{{{ if !pinExpiry }}}[[topic:pinned]]{{{ else }}}[[topic:pinned-with-expiry, {pinExpiryISO}]]{{{ end }}}"></i>
+								<i component="topic/locked" class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->" title="[[topic:locked]]"></i>
+								<i class="fa fa-arrow-circle-right <!-- IF !oldCid -->hidden<!-- ENDIF !oldCid -->" title="{{{ if privileges.isAdminOrMod }}}[[topic:moved-from, {oldCategory.name}]]{{{ else }}}[[topic:moved]]{{{ end }}}"></i>
+								{{{each icons}}}{@value}{{{end}}}
+							</span>
+							{title}
+						</span>
+					</h1>
+				
 
 			<div class="topic-info clearfix">
 				<div class="category-item inline-block">
@@ -58,6 +60,9 @@
 
 		<!-- IMPORT partials/topic/deleted-message.tpl -->
 		
+		<!-- IF config.usePagination -->
+		<!-- IMPORT partials/paginator.tpl -->
+		<!-- ENDIF config.usePagination -->
 	
 
 		<ul component="topic" class="posts" data-tid="{tid}" data-cid="{cid}">

@@ -29,7 +29,7 @@
 		<!-- IMPORT partials/chats-menu.tpl -->
 	</nav>
 
-	<main id="panel" class="slideout-panel">
+	<main id="panel" class="slideout-panel wtf-background-colour">
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
 			<div class="container" style="padding: 5px;">
 				<!-- IMPORT partials/menu.tpl -->

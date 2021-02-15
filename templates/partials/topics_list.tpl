@@ -1,4 +1,4 @@
-<ul component="category" class="topic-list" itemscope itemtype="http://www.schema.org/ItemList" data-nextstart="{nextStart}" data-set="{set}">
+<ul component="category" class="topic-list wtf-topics-container" itemscope itemtype="http://www.schema.org/ItemList" data-nextstart="{nextStart}" data-set="{set}">
 	<meta itemprop="itemListOrder" content="descending">
 	{{{each topics}}}
 	<li component="category/topic" class="row clearfix category-item {function.generateTopicClass}" <!-- IMPORT partials/data/category.tpl -->>

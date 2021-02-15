@@ -4,8 +4,8 @@
 	{{{end}}}
 </div>
 <div class="row">
-	<div class="topic <!-- IF widgets.sidebar.length -->col-lg-8 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
-		<div class="topic-header">
+	<div class="topic wtf-background-colour <!-- IF widgets.sidebar.length -->col-lg-8 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
+		<div class="topic-header" style="top: 50px; background-color: #f6f6f6;">
 		
 					<h1 component="post/header" class="" itemprop="name">
 						<span class="topic-title" component="topic/title">
@@ -21,7 +21,7 @@
 				
 
 			<div class="topic-info clearfix">
-				<div class="category-item inline-block">
+				<div class="category-item inline-block hidden-xs">
 					{{{ if category.icon }}}
 					<div role="presentation" class="icon pull-left" style="{{{ if category.bgColor }}}background-color: {category.bgColor};{{{end}}}; {{{ if category.color}}}color: {category.color};{{{end}}}">
 						<i class="fa fa-fw {category.icon}"></i>

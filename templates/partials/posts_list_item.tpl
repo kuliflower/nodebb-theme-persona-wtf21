@@ -4,7 +4,7 @@
             <!-- IF !../isMainPost -->RE: <!-- ENDIF -->{../topic.title}
         </a>
 
-        <div component="post/content" class="content">
+        <div component="post/content">
             {../content}
         </div>
 
